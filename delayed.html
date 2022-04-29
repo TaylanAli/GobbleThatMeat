@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid red;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: red;
+  color: #fec611;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #fec611;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    
+  }
+  
+}
+</style>
+</head>
+<head>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <link rel="stylesheet" href="contact.css">
+   
+    <header>
+      <a href="">
+          <img src="/IMG/9F1DB880-A52B-4AA3-8701-C2D806D84621-removebg-preview.png" class="logo" alt="Site desktop logo" width="1px" height="1.5px"></a>
+    </header>
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="upcoming.html">Gameplay</a>
+  <a href="contact.html"id="Contact">Contact</a>
+  <a href="subscribe.html"id="Subscribe">Subscribe</a>
+</div>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Leave your message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://media.wired.com/photos/5a3bf9025b461c24af9057f1/master/w_2560%2Cc_limit/hotdog-ta.jpg" style="width:100%">
+    </div>
+    <!-- Form -->
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Email Address</label>
+        <input type="text" id="ename" name="email" placeholder="Your email address..">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <div class="footer">
+          <p>Taylan, Carter, Roman Design 2022</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
